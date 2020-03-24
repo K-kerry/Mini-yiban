@@ -1,0 +1,88 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="background-photo" src="https://ae01.alicdn.com/kf/He371f3f3497c44f6a63a759c7558f351j.png">
+  </image>
+  <view class="main">
+    <view class="user">
+      <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+
+        </block>
+      </view>
+      <view class="usertext">
+        <text class="user-name">{{name}}</text>
+        <text class="user-major" decode="true">&nbsp;&nbsp;&nbsp;{{major}}</text>
+        <text class="user-department">\n {{department}}</text>
+      </view>
+    
+
+
+    </view>
+      <view class="data-synchronism">同步数据</view>
+
+    <view class="record">
+      <view class="record-text">
+        <text>今日步数:{{footNum.footNum_today}} \n</text>
+        <text>昨日步数:{{footNum.footNum_yesterday}}，排名{{footNum.rank_yesterday}} \n</text>
+        <text>本周步数:{{footNum.footNum_week}}，排名{{footNum.rank_week}} \n</text>
+        <text>本月步数:{{footNum.footNum_month}}，排名{{footNum.rank_month}} \n</text>
+        <text>总步数:{{footNum.footNum_all}}，排名{{footNum.rank_all}}</text>
+      </view>
+
+      <view class="record-board">
+        <image class="record-board-image" src="https://ae01.alicdn.com/kf/H3a39614190ce4a6c9a34115a28e8745bN.png"></image>
+        <view class="record-board-text">
+          <text decode="true">我已连续运动1天 \n &nbsp;&nbsp;&nbsp;累计运动1天</text>
+        </view>
+
+      </view>
+
+    </view>
+    <view class="rank-title">
+		<navigator >上周排名</navigator>
+		<navigator >昨日排名</navigator>
+		<navigator >本月排名</navigator>
+		<navigator >总排名</navigator>
+	</view>
+
+	<view class="rank-user">
+		<view class="rank-user-title">
+		
+				<text class="item1">排名</text>
+				<text class="item2">姓名</text>
+				<text class="item3">步数</text>
+	
+		</view>
+
+		<view wx:for="{{list}}" wx:key="{{item.id}}">
+			<view wx:if="{{item.id%2==1}}">
+				
+					<view class="rank-user-text" style="background-color:rgb(235, 235, 235)" >
+						<text class="item1">{{item.id}}</text>
+						<text class="item2">{{item.name}}</text>
+						<text class="item3">{{item.feetNum}}</text>
+					</view>
+				
+			</view>
+
+			<view wx:else>
+				
+					<view class="rank-user-text" style="background-color:white;">
+						<text class="item1">{{item.id}}</text>
+						<text class="item2">{{item.name}}</text>
+						<text class="item3">{{item.feetNum}}</text>
+					</view>
+			
+			</view>
+		</view>
+	</view>
+
+  </view>
+
+
+
+
+
+</view>

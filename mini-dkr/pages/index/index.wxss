@@ -1,0 +1,147 @@
+/**index.wxss**/
+.main{
+  padding-top:100rpx;
+
+}
+.user{
+  display: flex;
+  align-content: flex-start;
+  height: 130rpx;
+
+}
+
+.userinfo {
+  padding-left: 25rpx;
+
+
+
+}
+.usertext{
+  color:azure;
+  height: 100rpx;
+  padding-top:4%;
+ 
+
+
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  
+}
+
+.data-synchronism{
+  width: 130rpx;
+  height: 50rpx;
+  margin-left: 190rpx;
+  margin-bottom: 10rpx;
+  padding-top: 7rpx;
+  padding-left: 5rpx;
+  border-radius: 10rpx;
+  background-color:rgba(100, 78, 114, 0.508);
+  color: white;
+  font-size: 30rpx;
+}
+
+
+.background-photo{
+  width: 750rpx;
+  height: 1624rpx;
+  z-index: -9;
+  position: fixed;
+}
+
+.record{
+  
+  width: 700rpx;
+  height: 260rpx;
+  margin-left: 27rpx;
+  background-color:rgb(238, 228, 244, 0.3);
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size:30rpx;
+  color:rgb(72, 67, 75);
+}
+.record-board-image{
+  position: relative;
+  top:41rpx;
+  width: 311rpx;
+  height: 228rpx;
+
+ 
+}
+.record-board-text{
+  position: relative;
+  bottom:85rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.rank-title{
+  width: 670rpx;
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+  
+  display: flex;
+  justify-content: space-around;
+  font-size: 30rpx;
+  color: rgb(231, 226, 231);
+}
+.rank-user-title{
+  width: 700rpx;
+  height: 75rpx;
+  margin-top: 28rpx;
+  margin-left: 26rpx;
+  border-top-left-radius:8rpx; 
+  border-top-right-radius:8rpx; 
+  display: flex;
+  background-color: white;
+  color: rgb(161, 158, 161);
+  font-size: 30rpx;
+  align-items: center;
+
+
+}
+.item1{
+  text-align: center;
+  flex: 1;
+ 
+}
+
+.item2{
+
+  
+  flex: 2;
+}
+.item3{
+   text-align: center;
+  flex: 1;
+}
+
+
+
+
+
+
+.rank-user-text{
+  width: 700rpx;
+  height: 75rpx;
+  margin-left: 26rpx;
+  display: flex;
+  background-color: white;
+  color: rgb(70, 69, 69);
+  font-size: 30rpx;
+  align-items: center;
+
+
+}
+
+.px-list{
+  height: 70rpx;
+  background-color: white;
+}
